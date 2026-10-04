@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cánh đồng bất tận &amp; Cỏ lau | Tổ 4 - 12A17</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Lora:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nút 3 gạch (chỉ hiện trên điện thoại) -->
+  <button class="menu-btn" id="menuBtn" aria-label="Mở menu" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Nút "i" nhỏ ở góc phải: thay href="#" bằng link thật (giữ data-todo nếu chưa có link) -->
+  <div class="info">
+    <button class="info-btn" id="infoBtn" type="button" aria-label="Khám phá thêm, tài liệu và góp ý" aria-haspopup="true" aria-expanded="false" aria-controls="infoMenu">i</button>
+    <div class="info-menu" id="infoMenu" hidden>
+      <strong class="info-title">Khám phá thêm</strong>
+      <a href="#" data-todo target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/></svg>Bản Word đầy đủ</a>
+      <a href="#" data-todo target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v11H3zM12 16v4M8 20h8"/></svg>Bản PowerPoint</a>
+      <a href="#" data-todo target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Góp ý &amp; báo lỗi</a>
+    </div>
+  </div>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <!-- Thay khối này bằng: <img src="avatar.jpg" alt="Avatar Tổ 4"> -->
+      <div class="avatar">Chèn sau avatar nhóm</div>
+      <h1 class="team-name">TỔ 4 - 12A17</h1>
+      <p class="slogan">“Nghèo mà hạnh phúc”</p>
+    </div>
+    <nav class="nav" aria-label="Điều hướng chính">
+      <a href="#gioi-thieu" data-target="gioi-thieu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Giới thiệu</a>
+      <a href="#canh-dong-bat-tan" data-target="canh-dong-bat-tan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h12"/></svg>Cánh đồng bất tận</a>
+      <a href="#co-lau" data-target="co-lau"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V8M12 8c0-3 2-5 5-5 0 3-2 5-5 5zM12 14c0-3-2-5-5-5 0 3 2 5 5 5z"/></svg>Cỏ lau</a>
+      <a href="#tuong-dong" data-target="tuong-dong"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/></svg>Sự tương đồng</a>
+      <a href="#khac-biet" data-target="khac-biet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h14l-3-3M20 17H6l3 3"/></svg>Sự khác biệt</a>
+      <a href="#san-pham" data-target="san-pham"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.3l6.1-.7z"/></svg>Sản phẩm của nhóm</a>
+    </nav>
+  </aside>
+
+  <!-- ===== NỘI DUNG ===== -->
+  <main class="content" id="content">
+
+    <section class="page" id="gioi-thieu">
+      <h2>So sánh <em>Cánh đồng bất tận</em> và <em>Cỏ lau</em></h2>
+      <p class="lead">Hai câu chuyện, hai miền đất, cùng một nỗi niềm về con người.</p>
+
+      <h3>Thành viên nhóm</h3>
+      <div class="groups" id="members">
+        <div class="group g1"><div class="group-head"><span class="group-no">1</span><div><h4>Nhóm 1</h4><span class="count">6 thành viên</span></div></div><ul><li><i class="ini">T</i>Nguyễn Thị Phương Thảo</li><li><i class="ini">A</i>Nguyễn Thị Mai Anh</li><li><i class="ini">T</i>Nguyễn Võ Ngọc Trâm</li><li><i class="ini">N</i>Nguyễn Hoàng Hiếu Nghĩa</li><li><i class="ini">T</i>Nguyễn Lê Ngọc Thương</li><li><i class="ini">T</i>Nguyễn Tấn Thành</li></ul></div>
+        <div class="group g2"><div class="group-head"><span class="group-no">2</span><div><h4>Nhóm 2</h4><span class="count">6 thành viên</span></div></div><ul><li><i class="ini">N</i>Huỳnh Xuân Nghi</li><li><i class="ini">Y</i>Ngô Kim Yến</li><li><i class="ini">T</i>La Trần Tuấn Tú</li><li><i class="ini">Q</i>Nguyễn Bảo Quyên</li><li><i class="ini">N</i>Từ Phan Gia Nhi</li><li><i class="ini">U</i>Tạ Mỹ Phương Uyên</li></ul></div>
+      </div>
+      <button class="more-btn" id="moreBtn" aria-expanded="false" aria-controls="members"><span id="moreText">Xem thêm</span><i class="chev"></i></button>
+
+      <h3>Lý do chọn đề tài</h3>
+      <div class="prose">
+        <p><strong>Vì sao nên so sánh <em>Cỏ lau</em> và <em>Cánh đồng bất tận</em>?</strong></p>
+        <p>Đặt <em>Cỏ lau</em> (<strong>Nguyễn Minh Châu</strong>) và <em>Cánh đồng bất tận</em> (<strong>Nguyễn Ngọc Tư</strong>) bên cạnh nhau không chỉ là cuộc gặp gỡ giữa hai tác phẩm xuất sắc, mà còn là hành trình đối thoại giữa hai thế hệ cầm bút tiêu biểu của văn học Việt Nam.</p>
+        <ul class="points">
+          <li><strong>Sự kế thừa và bứt phá:</strong> Qua hình tượng người phụ nữ giữa bi kịch, việc so sánh giúp làm rõ cách văn học chuyển mình từ những vết thương hậu chiến đến những rạn nứt tình thân thời bình.</li>
+          <li><strong>Sứ mệnh chữa lành:</strong> Dù khác biệt về thi pháp và thời đại, cả hai tác giả đều gặp nhau ở niềm tin vào lòng vị tha và khát vọng hạnh phúc — khẳng định sức sống vĩnh hằng của giá trị nhân văn trong văn chương.</li>
+        </ul>
+      </div>
+
+      <h3>Mô hình / Sơ đồ tư duy</h3>
+      <figure class="fig"><img data-img src="imgmuc1.png" alt="Chèn sau sơ đồ: imgmuc1.png"></figure>
+    </section>
+
+    <section class="page work-a" id="canh-dong-bat-tan">
+      <h2>Cánh đồng bất tận</h2>
+      <p class="lead">Nguyễn Ngọc Tư</p>
+
+      <h3>Tác giả và bối cảnh ra đời</h3>
+      <div class="author-block">
+        <figure class="author-photo"><img data-img src="imgtacgia1.png" alt="Chèn sau ảnh tác giả: imgtacgia1.png"><figcaption>Nguyễn Ngọc Tư</figcaption></figure>
+        <div class="prose">
+          <p><strong>Tác giả:</strong> <em class="todo">Chèn sau thông tin tác giả Nguyễn Ngọc Tư</em></p>
+          <p><strong>Bối cảnh ra đời:</strong> Xuất hiện sau chiến tranh gần 30 năm, tác phẩm của Nguyễn Ngọc Tư phản ánh thực tại xã hội trong thời kỳ hội nhập và biến đổi. Lúc này, bi kịch không còn đến từ bom đạn lịch sử, mà xuất phát từ những <strong>rạn nứt tình thân</strong>, <strong>sự cô đơn tận cùng</strong> và <strong>góc khuất bạo lực âm ỉ</strong> trong đời sống thường nhật của con người Nam Bộ.</p>
+        </div>
+      </div>
+
+      <h3>Sự kiện chính</h3>
+      <div class="events">
+        <div class="event"><b class="num">1</b><div class="ev-body"><strong>Bi kịch gia đình rạn nứt</strong><p>Sau khi người mẹ bỏ theo người bán vải, Út Vũ đốt nhà, đưa hai con (Nương và Điền) lên ghe trôi dạt khắp các cánh đồng Nam Bộ và dùng tình cảm làm công cụ trả thù đời.</p></div></div>
+        <div class="event"><b class="num">2</b><div class="ev-body"><strong>Những cuộc gặp gỡ và mất mát</strong><p>Hai chị em cưu mang chị Sương – một phụ nữ bán dâm bị đánh ghen; nhưng sự ấm áp ngắn ngủi qua đi khi Sương rồi Điền lần lượt bỏ đi, để lại Nương cô độc bên người cha cạn kiệt tình thương.</p></div></div>
+        <div class="event"><b class="num">3</b><div class="ev-body"><strong>Đỉnh điểm bi kịch và mầm sống tha thứ</strong><p>Nương bị ba kẻ côn đồ cưỡng bức ngay trước mắt cha; thế nhưng từ trong tột cùng đau đớn, cô vẫn bao dung hướng về đứa trẻ tương lai bằng niềm tin vào lòng vị tha.</p></div></div>
+      </div>
+
+      <h3>Tóm tắt tác phẩm</h3>
+      <div class="more-box prose" style="--h:12em">
+        <p><em>Cánh đồng bất tận</em> là câu chuyện trôi dạt đầy cay đắng của hai chị em <strong>Nương</strong> và <strong>Điền</strong> cùng người cha tên <strong>Út Vũ</strong> trên chiếc ghe nuôi vịt, lang bạt khắp các miền sông nước Nam Bộ. Bi kịch bắt đầu từ khi mẹ Nương bỏ nhà theo một người bán vải dạo ngay trước mắt hai đứa trẻ. Đau đớn và hận thù, Út Vũ đốt sạch nhà cửa, mang hai con lên ghe sống đời du mục và dùng tình cảm làm phương tiện trả thù đời: ông quyến rũ những người đàn bà nhẹ dại, khiến họ yêu rồi tàn nhẫn bỏ rơi họ để trút bỏ uất hận.</p>
+        <p>Hai chị em Nương và Điền lớn lên trong sự thiếu vắng tình thương của mẹ và sự lạnh lẽo, cằn cỗi của cha. Một ngày nọ, hai đứa trẻ dũng cảm cứu <strong>chị Sương</strong> — một phụ nữ làm nghề bán dâm bị người trong làng đánh ghen và đổ keo dán sắt tàn nhẫn. Sự xuất hiện của Sương mang lại chút hơi ấm tình thân ngắn ngủi cho chiếc ghe nhỏ, nhưng rồi Sương lại tiếp tục trở thành nạn nhân của Út Vũ và phải bỏ đi; không lâu sau, Điền vì xót xa cho Sương cũng quyết định rời bỏ cha và chị.</p>
+      </div>
+
+      <h3>Giá trị nghệ thuật</h3>
+      <div><ul class="points">
+        <li><strong>Điểm nhìn trần thuật độc đáo:</strong> Kể qua đôi mắt của Nương — góc nhìn vừa ngây thơ, vừa trầy xước, miêu tả hiện thực một cách trần trụi mà sâu cay.</li>
+        <li><strong>Đậm đà chất liệu Nam Bộ:</strong> Ngôn ngữ mộc mạc, sắc lẹm, mang đậm hơi thở sông nước miền Tây (ghe, phèn chua, cà ràng...).</li>
+        <li><strong>Giọng điệu &amp; Biểu tượng:</strong> Giọng văn "tưng tửng", bình thản trước thảm cảnh làm tăng độ nhói đau; hình ảnh "cánh đồng bất tận" trở thành biểu tượng cho kiếp người trôi dạt, cô độc.</li>
+      </ul></div>
+
+      <h3>Tư tưởng chính</h3>
+      <div><ul class="points">
+        <li>Cảnh báo về những <strong>tổn thương tình thân</strong>, sự lạnh lẽo trong gia đình và vòng xoáy hận thù thời bình.</li>
+        <li>Tôn vinh <strong>sức sống phục sinh diệu kỳ</strong>, lòng bao dung vượt lên trên nỗi đau thân xác và tinh thần của người phụ nữ.</li>
+        <li>Thắp sáng niềm tin vào <strong>bản tính thiện lương</strong>, lấy sự tha thứ để khép lại bi kịch và mở ra tương lai cho thế hệ mai sau.</li>
+      </ul></div>
+
+      <div class="pdf-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h12"/></svg>
+        <div><strong>Đọc toàn văn tác phẩm</strong><span><em>Cánh đồng bất tận</em> – Nguyễn Ngọc Tư</span></div>
+        <a class="pdf-btn" href="https://share.google/ovRHVEfIV07xxqfW6" target="_blank" rel="noopener">Đọc tác phẩm</a>
+      </div>
+    </section>
+
+    <section class="page work-b" id="co-lau">
+      <h2>Cỏ lau</h2>
+      <p class="lead">Nguyễn Minh Châu</p>
+
+      <h3>Tác giả và bối cảnh ra đời</h3>
+      <div class="author-block">
+        <figure class="author-photo"><img data-img src="imgtacgia2.png" alt="Chèn sau ảnh tác giả: imgtacgia2.png"><figcaption>Nguyễn Minh Châu</figcaption></figure>
+        <div class="prose">
+          <p><strong>Tác giả:</strong> Nguyễn Minh Châu (20 tháng 10 năm 1930 – 23 tháng 1 năm 1989), tên thật là <strong>Nguyễn Thí</strong>, là một nhà văn có ảnh hưởng quan trọng đối với văn học Việt Nam trong giai đoạn chiến tranh Việt Nam và thời kỳ đầu của Đổi mới. Ông là một trong những cây bút văn xuôi tiêu biểu của nền văn học Việt Nam 1954–1975 và được xem là "người mở đường tinh anh" thời kỳ Đổi mới.</p>
+          <p><strong>Bối cảnh ra đời:</strong> Ra đời vào <strong>tháng 11 năm 1987</strong>, thời điểm di chứng chiến tranh vẫn còn vô cùng nhức nhối. Tác phẩm đánh dấu bước ngoặt tư duy nghệ thuật của Nguyễn Minh Châu khi dịch chuyển từ cảm hứng sử thi ngợi ca sang <strong>cảm hứng thế sự – đời tư</strong>, dũng cảm soi chiếu vào những góc khuất rỉ máu hậu chiến và bi kịch cá nhân thời hậu chiến.</p>
+        </div>
+      </div>
+
+      <h3>Sự kiện chính</h3>
+      <div class="events">
+        <div class="event"><b class="num">1</b><div class="ev-body"><strong>Người lính trở về từ cõi chết</strong><p>Năm 1983, Lực – người lính Quảng Trị – trở lại chiến trường xưa để tìm hài cốt đồng đội và bàng hoàng đối diện với tấm bia mộ mang chính tên mình.</p></div></div>
+        <div class="event"><b class="num">2</b><div class="ev-body"><strong>Bi kịch nghịch cảnh hậu chiến</strong><p>Lực cay đắng nhận ra người vợ cũ (Thai) vì tưởng anh đã hy sinh nên đã đi bước nữa để phụng dưỡng cha chồng; sự trở về của anh đẩy Thai vào sự giằng xé dữ dội giữa tình và nghĩa.</p></div></div>
+        <div class="event"><b class="num">3</b><div class="ev-body"><strong>Sự hy sinh âm thầm</strong><p>Hiểu được nỗi đau và sự hy sinh của người thân, Lực chủ động rút lui, lặng lẽ rời đi để giữ gìn mái ấm bình yên cho Thai.</p></div></div>
+      </div>
+
+      <h3>Tóm tắt tác phẩm</h3>
+      <div class="more-box prose" style="--h:12em">
+        <p><em>Cỏ lau</em> xoay quanh <strong>Lực</strong> — một sĩ quan quân đội trở lại chiến trường xưa ở Quảng Trị sau 24 năm để tìm kiếm hài cốt đồng đội. Tại đây, anh bàng hoàng đối diện với chính ngôi mộ mang tên mình và nhận ra trong tâm thức người thân, anh đã "chết" từ hai mươi tư năm trước. Bi kịch gia đình mở ra khi Lực gặp lại <strong>Thai</strong> — người vợ trẻ năm xưa anh vừa cưới được vài ngày thì lên đường ra trận. Vì tin Lực đã hy sinh (sau khi nhận một cái xác vô danh trôi trên sông), Thai ở lại phụng dưỡng cha chồng chu đáo.</p>
+        <p>Sau nhiều năm, cô đi bước nữa với <strong>Quảng</strong> và sinh thêm những người con, nhưng vẫn đem cả gia đình mới về sống chung để chăm sóc cha Lực và thờ phụng anh. Sự trở về bất ngờ của Lực khiến tất cả rơi vào giằng xé: Thai xót xa và dằn dằn giữa tình đầu và nghĩa hiện tại, Quảng mang tâm lý ê kề, còn Lực phải tự đối diện với những dằn xé của chính mình trong quá khứ. Nhận ra sự có mặt của mình chỉ làm xáo trộn mái ấm bình yên của Thai, Lực chọn cách chủ động rút lui, lặng lẽ rời đi để giữ lại sự êm ấm cho người thân.</p>
+      </div>
+
+      <h3>Giá trị nghệ thuật</h3>
+      <div><ul class="points">
+        <li><strong>Thi pháp đổi mới &amp; Tình huống triết luận:</strong> Xây dựng tình huống truyện kịch tính (người lính "từ cõi chết trở về" đối diện với chính ngôi mộ của mình), đan cài quá khứ và hiện tại theo phương thức đồng hiện.</li>
+        <li><strong>Điểm nhìn &amp; Giọng điệu:</strong> Truyện kể theo ngôi thứ nhất đầy tính tự vấn của Lực; giọng văn thâm trầm, trang trọng, kết hợp giữa tự sự và trữ tình triết lý.</li>
+        <li><strong>Biểu tượng nghệ thuật giàu sức gợi:</strong> Chi tiết cỏ lau (loài cây hoang dại được "xương thịt người tưới bón"), hòn vọng phu, chậu nước rửa ảnh nâng bi kịch cá nhân lên tầm vóc chiêm nghiệm nhân sinh.</li>
+      </ul></div>
+
+      <h3>Tư tưởng chính</h3>
+      <div><ul class="points">
+        <li>Dũng cảm soi chiếu vào những <strong>góc khuất rỉ máu</strong> và di chứng tinh thần thời hậu chiến.</li>
+        <li>Tôn vinh <strong>sự nhẫn nại, nghĩa tình và lòng vị tha</strong> của người phụ nữ Việt Nam trước bi kịch thời thế.</li>
+        <li>Gửi gắm thông điệp nhân văn về <strong>sự hy sinh, nhường nhịn</strong> và khả năng chữa lành tổn thương bằng tình thương yêu.</li>
+      </ul></div>
+
+      <div class="pdf-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h12"/></svg>
+        <div><strong>Đọc toàn văn tác phẩm</strong><span><em>Cỏ lau</em> – Nguyễn Minh Châu</span></div>
+        <a class="pdf-btn" href="https://share.google/IiFOQtGSeWluRYfko" target="_blank" rel="noopener">Đọc tác phẩm</a>
+      </div>
+    </section>
+
+    <section class="page" id="tuong-dong">
+      <h2>Sự tương đồng</h2>
+      <p class="lead">Điểm gặp nhau của hai trang văn.</p>
+
+      <h3>Nội dung so sánh</h3>
+      <div class="sim">
+        <article class="sim-item"><h4>Số phận nhỏ bé và bi kịch của người phụ nữ</h4><p>Cả Thai (<em>Cỏ lau</em>) và Nương (<em>Cánh đồng bất tận</em>) đều là những người phụ nữ gánh chịu bi kịch nghiệt ngã không do lỗi lầm của bản thân; họ chịu nhiều mất mát, đau khổ giữa những xô lệch của thời thế hay sự thù hận nhẫn tâm của hoàn cảnh gia đình.</p></article>
+        <article class="sim-item"><h4>Di chứng hậu chiến và bi kịch đời thường</h4><p>Cả hai tác phẩm đều đưa ra lời cảnh báo đầy nhói đau về hiện thực: nếu <em>Cỏ lau</em> phơi bày những vết thương tinh thần và bạo lực thời chiến vẫn ngấm sâu vào nếp nghĩ thời bình, thì <em>Cánh đồng bất tận</em> lại cảnh báo những tổn thương tình thân không được chữa lành sẽ trở thành mầm mầm cho cái ác lan rộng.</p></article>
+        <article class="sim-item"><h4>Bản tính thiện lương và lòng vị tha diệu kỳ</h4><p>Từ trong tột cùng đau khổ, cả hai nhân vật đều không để hoàn cảnh nhẫn tâm làm khô cạn tình yêu thương; vẻ đẹp tâm hồn của họ tỏa sáng qua sự nhẫn nại, lòng bao dung, vị nhân sinh (Thai phụng dưỡng cha chồng cũ, dặn con thắp hương cho hai ngôi mộ; Nương cứu chị Sương, chịu đòn cho cha và chọn tha thứ cho đứa trẻ tương lai) để hướng tới sự chữa lành và niềm tin vào bản tính thiện lương.</p></article>
+      </div>
+
+      <h3>Lý do tương đồng</h3>
+      <div class="prose reason-note">
+        <p>Sự tương đồng giữa hai tác phẩm trước hết xuất phát từ <strong>bước ngoặt của văn học Việt Nam sau năm 1975</strong> — khi tư duy nghệ thuật chuyển từ cảm hứng sử thi ngợi ca sang cảm hứng thế sự – đời tư, đặt số phận cá nhân làm trung tâm. Cùng mang <strong>trái tim nhân đạo sâu sắc</strong>, cả Nguyễn Minh Châu và Nguyễn Ngọc Tư đều dành sự thấu hiểu xót xa cho người phụ nữ giữa nghịch cảnh, từ đó ngợi ca thiên tính vị tha và sức sống bền bỉ của họ.</p>
+      </div>
+    </section>
+
+    <section class="page" id="khac-biet">
+      <h2>Sự khác biệt</h2>
+      <p class="lead">Cùng một đề tài, hai cách kể.</p>
+      <p class="vs-note"><em>Cỏ lau</em> (1987) và <em>Cánh đồng bất tận</em> (2005) cách nhau 18 năm.</p>
+
+      <h3>3 điểm khác biệt chính</h3>
+      <div class="diffs">
+        <article class="diff">
+          <h4 class="diff-title">Bối cảnh lịch sử và bản chất bi kịch</h4>
+          <div class="diff-cols">
+            <div class="diff-col a"><span class="who">Cánh đồng bất tận</span><p>Đặt trong bối cảnh đời sống đương đại với những rạn nứt tình thân, bi kịch của Nương nảy sinh từ <strong>sự cạn kiệt tình thương trong gia đình</strong> và vòng xoáy trả thù tàn nhẫn của người cha. Tuy nhiên, Nương chủ động vươn lên, khép lại đau thương bằng sự tha thứ và niềm tin vào mầm sống mới.</p></div>
+            <div class="diff-col b"><span class="who">Cỏ lau</span><p>Đặt trong bối cảnh hậu chiến, bi kịch của Thai mang bản chất của <strong>vết thương lịch sử giáng xuống từ bên ngoài</strong> (mối tình bị chia cắt 24 năm, thành "hòn vọng phu" đời thường), khép lại trong sự chịu đựng và âm thầm hy sinh.</p></div>
+          </div>
+        </article>
+        <article class="diff">
+          <h4 class="diff-title">Đặc trưng thi pháp, kết cấu và hệ thống biểu tượng</h4>
+          <div class="diff-cols">
+            <div class="diff-col a"><span class="who">Cánh đồng bất tận</span><p>Điểm nhìn từ Nương (đôi mắt ngây thơ nhưng trầy xước nét già dặn). Kết cấu 8 phần dồn nén biến cố, kết hợp <strong>yếu tố kỳ ảo</strong> (hai chị em giao cảm qua suy nghĩ, nghe hiểu tiếng vịt). Biểu tượng thiên nhiên phương Nam: <em>cánh đồng hoang hoắt</em>, <em>bầy vịt đói nhếch nhác</em>, <em>bồ lúa lênh đênh</em>.</p></div>
+            <div class="diff-col b"><span class="who">Cỏ lau</span><p>Tình huống truyện mang tính <strong>triết luận kịch tính</strong> (người lính "đã chết" trở về, vái trước mộ mình). Ngôi kể thứ nhất (Lực), kết cấu 6 phần đan cài hiện tại - quá khứ theo phương thức đồng hiện. Biểu tượng giàu suy tưởng: <em>cỏ lau</em>, <em>hòn vọng phu</em>, <em>chậu nước rửa ảnh</em>.</p></div>
+          </div>
+        </article>
+        <article class="diff">
+          <h4 class="diff-title">Phong cách nghệ thuật, ngôn ngữ và giọng điệu</h4>
+          <div class="diff-cols">
+            <div class="diff-col a"><span class="who">Cánh đồng bất tận</span><p>Nguyễn Ngọc Tư là <strong>nhà văn nữ thời bình</strong>, viết về nỗi đau qua câu chuyện đời thường sông nước. Giọng văn "tưng tửng", thản nhiên đến tê dại trước thảm cảnh; ngôn ngữ đậm chất Nam Bộ mộc mạc mà sắc lẹm (<em>ghe, kinh, cà ràng, phèn chua, lúc nhúc, chặt tóc dục dặc</em>).</p></div>
+            <div class="diff-col b"><span class="who">Cỏ lau</span><p>Nguyễn Minh Châu là <strong>nhà văn quân đội</strong> kinh qua chiến tranh nên câu chuyện đậm đà chiều sâu triết luận và sự sám hối. Giọng văn trang trọng, trầm sương, đậm chất suy tưởng, hòa quyện tự sự và trữ tình.</p></div>
+          </div>
+        </article>
+      </div>
+
+      <h3>Lý do dẫn đến sự khác biệt</h3>
+      <div class="prose">
+        <p>Sự khác biệt sâu sắc này xuất phát từ <strong>khoảng cách thời đại, trải nghiệm sống và cá tính sáng tạo</strong> của hai nhà văn:</p>
+        <ul class="points">
+          <li><strong>Nguyễn Minh Châu</strong> là người lính bước qua chiến tranh, mang độ lùi tâm lý hậu chiến nên tiếp cận con người ở chiều sâu triết luận lịch sử.</li>
+          <li><strong>Nguyễn Ngọc Tư</strong> là nhà văn nữ sinh ra thời bình tại Cà Mau, gắn bó với sông nước miền Tây nên soi chiếu nỗi đau từ góc nhìn rạn nứt tình thân đương đại.</li>
+        </ul>
+        <p>Bên cạnh đó, sự chuyển biến của tư duy nghệ thuật qua từng giai đoạn văn học cùng lựa chọn thi pháp cá nhân đã quy định những nét riêng biệt về ngôi kể, giọng điệu và biểu tượng của mỗi tác phẩm.</p>
+      </div>
+    </section>
+
+    <section class="page" id="san-pham">
+      <h2>Sản phẩm của nhóm</h2>
+      <p class="lead">Những sản phẩm sáng tạo đi kèm đề tài.</p>
+      <div class="products">
+        <details class="product">
+          <summary><span class="p-no">1</span><span class="p-title">Mô hình so sánh 2 tác phẩm</span><i class="chev"></i></summary>
+          <div class="p-body">
+            <figure class="fig"><img data-img src="img2.png" alt="Chèn sau ảnh: img2.png"></figure>
+            <p class="p-desc">Sơ đồ đặt hai tác phẩm cạnh nhau, đối chiếu điểm tương đồng và khác biệt về bối cảnh, nhân vật và tư tưởng.</p>
+          </div>
+        </details>
+        <details class="product">
+          <summary><span class="p-no">2</span><span class="p-title">Video AI</span><i class="chev"></i></summary>
+          <div class="p-body">
+            <figure class="fig"><img data-img src="img3.png" alt="Chèn sau ảnh: img3.png"></figure>
+            <p class="p-desc">Đoạn video nhóm thực hiện bằng AI, tái hiện không khí hai câu chuyện từ miền Tây sông nước đến vùng đất hậu chiến.</p>
+          </div>
+        </details>
+        <details class="product">
+          <summary><span class="p-no">3</span><span class="p-title">Infographic</span><i class="chev"></i></summary>
+          <div class="p-body">
+            <figure class="fig"><img data-img src="img4.png" alt="Chèn sau ảnh: img4.png"></figure>
+            <p class="p-desc">Infographic tóm lược nhanh thông tin tác giả, diễn biến chính và những điểm gặp nhau, khác nhau của hai tác phẩm.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
