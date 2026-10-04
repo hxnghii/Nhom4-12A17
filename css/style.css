@@ -1,39 +1,39 @@
 :root {
-  /* Color Palette - Warm, Earthy, Academic */
-  --c-bg: #fdfaf6; /* Parchment-like background */
-  --c-bg-alt: #f4ebd8; /* Slightly darker parchment */
-  --c-text-main: #2b241e; /* Deep dark brown for readability */
-  --c-text-muted: #5a4f44; /* Muted brown */
-  --c-heading: #3a2e24; /* Rich brown for headings */
-  
-  --c-accent: #8b4513; /* Saddle brown / earthy red-brown */
-  --c-accent-hover: #a0522d; /* Lighter saddle brown */
-  --c-accent-light: #f5deb3; /* Wheat / light amber for subtle highlights */
-  
-  --c-green: #4a5d23; /* Muted forest green */
-  --c-green-light: #e8ecd8; /* Very pale green for diffs */
-  --c-gold: #b8860b; /* Dark goldenrod */
-  
-  --c-sidebar-bg: #2a231d; /* Very dark earthy tone */
-  --c-sidebar-text: #e6dfd5;
-  --c-sidebar-hover: #3d342b;
-  --c-sidebar-active: #8b4513;
-  
-  --c-border: #e2d5c1;
-  --c-overlay: rgba(15, 12, 10, 0.6);
+  /* Color Palette - Xanh rêu: xanh sông (Cánh đồng bất tận) + vàng cỏ lau (Cỏ lau) */
+  --c-bg: #dfe6e3;            /* Nền xám xanh */
+  --c-bg-alt: #f4f7f5;        /* Nền phụ, sáng hơn nền chính */
+  --c-text-main: #1d2824;     /* Chữ chính */
+  --c-text-muted: #5b6b64;    /* Chữ phụ */
+  --c-heading: #3d5a50;       /* Tiêu đề xanh rêu */
+
+  --c-accent: #3f7a6c;        /* Xanh sông */
+  --c-accent-hover: #2f6f66;  /* Xanh sông đậm hơn khi hover */
+  --c-accent-light: #e6efeb;  /* Xanh nhạt cho vùng nhấn nhẹ */
+
+  --c-reed: #99601c;          /* Nâu vàng cỏ lau */
+  --c-reed-light: #f3e8d6;    /* Nền nhạt cho cột Cỏ lau */
+  --c-gold: #d2a95a;          /* Vàng điểm nhấn */
+
+  --c-sidebar-bg: #3d5a50;    /* Sidebar xanh rêu đậm */
+  --c-sidebar-text: #eef3ef;
+  --c-sidebar-hover: #4a695e;
+  --c-sidebar-active: #3f7a6c;
+
+  --c-border: #cfd8d3;
+  --c-overlay: rgba(31, 58, 51, 0.6);
 
   /* Typography */
   --font-body: 'Be Vietnam Pro', sans-serif;
   --font-heading: 'Lora', serif;
-  
+
   /* Spacing & Sizes */
   --sidebar-width: 280px;
   --content-max-width: 800px;
   --radius: 8px;
   --radius-lg: 16px;
-  --shadow: 0 4px 12px rgba(43, 36, 30, 0.08);
-  --shadow-sm: 0 2px 6px rgba(43, 36, 30, 0.05);
-  
+  --shadow: 0 4px 12px rgba(31, 58, 51, 0.12);
+  --shadow-sm: 0 2px 6px rgba(31, 58, 51, 0.08);
+
   /* Transitions */
   --transition: 0.3s ease;
 }
@@ -147,7 +147,7 @@ svg {
   top: 1rem;
   left: 1rem;
   z-index: 1000;
-  background: var(--c-bg);
+  background: var(--c-sidebar-bg);
   border: 1px solid var(--c-border);
   border-radius: 50%;
   width: 44px;
@@ -165,7 +165,7 @@ svg {
   display: block;
   width: 20px;
   height: 2px;
-  background-color: var(--c-text-main);
+  background-color: #fff;
   transition: transform var(--transition), opacity var(--transition);
 }
 
@@ -218,7 +218,7 @@ body.sidebar-open {
 .brand {
   padding: 2.5rem 1.5rem 2rem;
   text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 
 .avatar {
@@ -226,7 +226,7 @@ body.sidebar-open {
   height: 80px;
   border-radius: 50%;
   background-color: var(--c-sidebar-hover);
-  border: 2px solid var(--c-accent);
+  border: 2px solid var(--c-gold);
   margin: 0 auto 1rem;
   display: flex;
   align-items: center;
@@ -247,7 +247,7 @@ body.sidebar-open {
 .slogan {
   font-style: italic;
   font-family: var(--font-heading);
-  color: var(--c-accent-light);
+  color: var(--c-gold);
   font-size: 0.9rem;
   margin-bottom: 0;
 }
@@ -270,13 +270,17 @@ body.sidebar-open {
   border-left: 3px solid transparent;
 }
 
+.nav a svg {
+  color: var(--c-gold);
+}
+
 .nav a:hover {
   background-color: var(--c-sidebar-hover);
 }
 
 .nav a.active {
   background-color: var(--c-sidebar-hover);
-  border-left-color: var(--c-accent);
+  border-left-color: var(--c-gold);
   color: #fff;
 }
 
@@ -316,7 +320,7 @@ body.sidebar-open {
   position: absolute;
   top: calc(100% + 0.5rem);
   right: 0;
-  background: var(--c-bg);
+  background: #fff;
   border: 1px solid var(--c-border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -360,7 +364,7 @@ body.sidebar-open {
 .info-menu a svg {
   width: 1em;
   height: 1em;
-  color: var(--c-text-muted);
+  color: var(--c-accent);
 }
 
 /* =========================================
@@ -481,7 +485,7 @@ body.sidebar-open {
 .ini {
   width: 28px;
   height: 28px;
-  background: var(--c-bg-alt);
+  background: var(--c-accent-light);
   color: var(--c-accent);
   border-radius: 50%;
   display: flex;
@@ -733,7 +737,7 @@ body.sidebar-open {
 }
 
 .reason-note {
-  background: var(--c-bg-alt);
+  background: #fff;
   padding: 1.5rem;
   border-left: 4px solid var(--c-gold);
   border-radius: 0 var(--radius) var(--radius) 0;
@@ -781,7 +785,7 @@ body.sidebar-open {
   background: #fff;
 }
 .diff-col.b {
-  background: var(--c-green-light);
+  background: var(--c-reed-light);
 }
 
 .who {
@@ -800,8 +804,8 @@ body.sidebar-open {
   color: var(--c-accent);
 }
 .diff-col.b .who {
-  background: rgba(74, 93, 35, 0.15);
-  color: var(--c-green);
+  background: rgba(153, 96, 28, 0.14);
+  color: var(--c-reed);
 }
 
 /* Products Accordion */
@@ -832,7 +836,7 @@ body.sidebar-open {
   display: none;
 }
 .p-no {
-  background: var(--c-text-muted);
+  background: var(--c-heading);
   color: #fff;
   width: 24px;
   height: 24px;
@@ -930,7 +934,7 @@ figure.img-error::after {
   .menu-btn {
     display: flex;
   }
-  
+
   .sidebar {
     transform: translateX(-100%);
     max-width: 82vw;
@@ -938,7 +942,7 @@ figure.img-error::after {
   body.sidebar-open .sidebar {
     transform: translateX(0);
   }
-  
+
   .content {
     margin-left: 0;
     padding: 5rem 1.5rem 3rem;
@@ -952,7 +956,7 @@ figure.img-error::after {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .diff-cols {
     grid-template-columns: 1fr;
   }
@@ -960,7 +964,7 @@ figure.img-error::after {
     border-right: none;
     border-bottom: 1px solid var(--c-border);
   }
-  
+
   .pdf-card {
     flex-direction: column;
     text-align: center;
@@ -974,7 +978,7 @@ figure.img-error::after {
     top: 1rem;
     right: 1rem;
   }
-  
+
   h2 {
     font-size: 1.75rem;
   }
