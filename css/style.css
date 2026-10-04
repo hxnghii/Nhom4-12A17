@@ -1,20 +1,18 @@
 :root {
-  /* Color Palette - Xanh rêu: xanh sông (Cánh đồng bất tận) + vàng cỏ lau (Cỏ lau) */
-  --c-bg: #dfe6e3;            /* Nền xám xanh */
-  --c-bg-alt: #f4f7f5;        /* Nền phụ, sáng hơn nền chính */
-  --c-text-main: #1d2824;     /* Chữ chính */
-  --c-text-muted: #5b6b64;    /* Chữ phụ */
-  --c-heading: #3d5a50;       /* Tiêu đề xanh rêu */
+  --c-bg: #dfe6e3;            
+  --c-bg-alt: #f4f7f5;        
+  --c-text-main: #1d2824;     
+  --c-text-muted: #5b6b64;  
+  --c-heading: #3d5a50;       
 
-  --c-accent: #3f7a6c;        /* Xanh sông */
-  --c-accent-hover: #2f6f66;  /* Xanh sông đậm hơn khi hover */
-  --c-accent-light: #e6efeb;  /* Xanh nhạt cho vùng nhấn nhẹ */
+  --c-accent: #3f7a6c;        
+  --c-accent-hover: #2f6f66;  
+  --c-accent-light: #e6efeb;  
 
-  --c-reed: #99601c;          /* Nâu vàng cỏ lau */
-  --c-reed-light: #f3e8d6;    /* Nền nhạt cho cột Cỏ lau */
-  --c-gold: #d2a95a;          /* Vàng điểm nhấn */
-
-  --c-sidebar-bg: #3d5a50;    /* Sidebar xanh rêu đậm */
+  --c-reed: #99601c;          
+  --c-reed-light: #f3e8d6;  
+  --c-gold: #d2a95a;         
+  --c-sidebar-bg: #3d5a50;   
   --c-sidebar-text: #eef3ef;
   --c-sidebar-hover: #4a695e;
   --c-sidebar-active: #3f7a6c;
